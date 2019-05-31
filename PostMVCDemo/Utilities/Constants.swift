@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+var post_Url = "https://jsonplaceholder.typicode.com/posts"
+

@@ -10,15 +10,16 @@ import UIKit
 
 class PostViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    static let identifier: String = "postcell"
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var descLbl: UITextView!
+    
+    //set data to lables
+    func populate(with user: Post)  {
+        
+        titleLbl.text = user.title
+        descLbl.text = user.desc
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    
 }

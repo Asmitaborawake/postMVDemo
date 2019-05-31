@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+struct Post {
+    
+    let userId : Int
+    let id : Int
+    let title : String
+    let desc : String
+    
+}
